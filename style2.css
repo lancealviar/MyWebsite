@@ -1,0 +1,438 @@
+@font-face {
+	src: url(Fonts/ShadowsIntoLight.ttf);
+	font-family:shadowed;
+}
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* my codes */
+
+* {
+		text-decoration: none;
+		color: black;
+}
+
+main {
+	padding-top: 100px;
+}
+
+body {
+	background-color: white;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+header .homepage{
+	font-family: arial;
+	font-size: 25px;
+	font-weight: 700;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+header .cases {
+	display: none;
+}
+
+header nav ul {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+header nav ul li {
+	display: inline-block;
+	float: left;
+	list-style: none;
+}
+
+header nav ul li a {
+	font-family: "arial black";
+	font-size: 15px;
+	color: #111;
+	text-transform: uppercase;
+	padding:0 15px;
+	display:block;
+}
+header nav ul li a:hover {
+	color: red;
+}
+
+@media only screen and (min-width:1000px) {
+	header .homepage {
+	margin: 30px 0;
+	text-align: left;
+	padding: 0 20px 0 40px;
+	border-right: 3px solid black;
+	float: left;
+	line-height: 40px;
+}
+header nav ul {
+	margin: 30px 0 0 30px;
+	float: left;
+}
+header nav ul li a {
+	line-height: 40px;
+}
+header .cases {
+	display: block;
+	font-family: "arial black";
+	font-size: 15px;
+	color: #111;
+	text-transform: uppercase;
+	border: 2px solid black;
+	line-height: 40px;
+	padding:5px;
+	margin:28px 40px 28px 0;
+	float:right;
+}
+}
+
+/* content page */
+.videoback{
+	background-image: url(Pictures/videobackground.jpg);
+	width: 100%;
+}
+.sorry {
+	width: 100%;
+}
+.casesbg{
+	background-color: #4e4e4e !important;
+}
+.sec-background {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url(Pictures/pormahan.jpg);
+	background-repeat: no-repeat;
+	background-position: top-center;
+	background-size: cover;
+	display: table;
+}
+
+.vertical-view {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.sec-background h1 {
+	font-family: "arial black";
+	font-size: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: capitalize;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;
+	padding-bottom: 20px;
+}
+section h2{
+	color:gray;
+}
+.sec-background p {
+	font-family: "arial black";
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 700;
+	color: #fff;
+	line-height: 25px;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;
+}
+.sec-links div{
+	margin: 15px 15px 0;
+	width: calc(100% - 30px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+.sec-links div h2 {
+	font-family: "arial black";
+	font-size: 30px;
+	line-height:100px;
+	color: black;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+@media only screen and (min-width:1000px) {
+.casesbg{
+	background-image: url(Pictures/casesbg.jpg);
+}
+.wrapper {
+	width:1000px;
+	margin: auto;
+}
+	.sec-background {
+	width: 100%;
+	height: 500px;
+}
+.sec-background p {
+	display:block;
+	width:400px;
+	margin: 0 auto;
+}
+.sec-links {
+	overflow:hidden;
+}
+.sec-links div{
+	margin: 15px 12px 0;
+	width: calc(100% - 30px);
+	height: 200px;
+	background-color: #f2f2f2;
+	float: left;
+}
+.squarebox {
+	width: calc(25% - 30px) !important;
+}
+.rectanglebox {
+	width: calc(50% - 30px) !important;
+}
+.sec-links div h2 {
+	line-height:200px;
+}
+.contactbox {
+	width: 1000px !important;
+}
+}
+/* last area */
+
+footer {
+	width: calc(100% - 60px);
+	padding: 30px 30px;
+	margin-top: 20px;
+	background-color: #222;
+	overflow: hidden;
+}
+footer ul{
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+footer ul li{
+	display: block;
+	list-style: none;
+}
+footer ul li a{
+	font-family: arial;
+	font-size: 15px;
+	color: #fff;
+	line-height: 30px;
+}
+.footer-mainlinks2 {
+	display:none;
+}
+.sm-links {
+	width: 35px;
+	float: right;
+}
+.sm-links img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+@media only screen and (min-width:1000px) {
+.footer-mainlinks2 {
+	display:block;
+}
+footer ul{
+	padding-right: 30px;
+}
+footer ul li a{
+	font-size: 15px;
+}
+footer ul li p{
+	font-family: arial;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+}
+
+/*Cases*/
+.caseslink {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.caseslink h2 {
+	font-family: "arial black";
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: capitalize;
+}
+.caseslink .caselink {
+	width:230px;
+	height:230px;
+	margin: 20px 10px 0;
+	float: left;
+	background-color: #e3e3e3;
+}
+
+.caseslink .caselink p{
+	padding-top: 43%;
+	font-family: "arial black";
+	font-size: 22px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: capitalize;
+}
+.contactbox {
+	width: 100%;
+	height: 130px;
+	background-color: #e3e3e3;
+	margin: 0 auto;
+}
+
+.contactbox h1 {
+	padding-top: 20px;
+	font-family: "arial black";
+	font-size: 22px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: capitalize;
+}
+.contactbox p {
+	font-family: "arial black";
+	font-size: 10px;
+	line-height: 30px;
+	text-align: center;
+}
+
+/* Case */
+.case-link h2 {
+	font-family: arial;
+	font-size: 30px;
+	text-align:center;
+	text-transform: uppercase;
+	padding-top: 15px;
+}
+.case-link video {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	height: 480px;
+	padding-bottom: 20px;
+}
+.case-link article h3 {
+	font-family: arial;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.case-link article div p {
+	font-family: calibri;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 25px;
+	column-count: 3;
+	column-gap: 30px;
+}
